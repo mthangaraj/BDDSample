@@ -6,6 +6,7 @@ import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -63,7 +64,12 @@ public class DriverUtil {
 
                     System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + File.separator + "driver" + File.separator + props.getProperty("driver_name"));
 
-                    driver = new ChromeDriver();
+                    ChromeOptions options = new ChromeOptions();
+
+                    options.addArguments("--no-sandbox");
+                    options.addArguments("--disable-dev-shm-usage");
+
+                    driver = new ChromeDriver(options);
                     driver.manage().window().maximize();
                     driver.get(props.getProperty("url"));
                 } else if (props.getProperty("browser").equalsIgnoreCase(CommonConstant.FIREFOX_BROWSER)) {
