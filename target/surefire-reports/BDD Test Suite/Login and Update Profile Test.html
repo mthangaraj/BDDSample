@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Login and Update Profile Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jun 21 01:05:24 IST 2018</td>
+<td>Started on:</td><td>Thu Jun 21 01:11:43 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>36 seconds (36467 ms)</td>
+<tr><td>Total time:</td><td>49 seconds (49640 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,53 +76,8 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='runner.TestRunner.feature()'><b>feature</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Feature<br>Parameters: To test espresso multi login</td>
-<td><div><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: No element found with identifier name-username
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-	at runner.TestRunner.feature(TestRunner.java:33)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.AssertionError: No element found with identifier name-username
-	at org.junit.Assert.fail(Assert.java:88)
-	at actions.CommonActions.clearTextEvent(CommonActions.java:109)
-	at actions.WebActions.actionClearText(WebActions.java:134)
-	at pagefactory.LoginPage.actionClearInputsInLoginPage(LoginPage.java:66)
-	at scriptrunner.ScriptRunnerOne.run(ScriptRunnerOne.java:37)
-	at ✽.And login with multiple Username and Password(EspressoMultiLogin.feature:6)
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace936283746", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace936283746'><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: No element found with identifier name-username
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-	at runner.TestRunner.feature(TestRunner.java:33)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.AssertionError: No element found with identifier name-username
-	at org.junit.Assert.fail(Assert.java:88)
-	at actions.CommonActions.clearTextEvent(CommonActions.java:109)
-	at actions.WebActions.actionClearText(WebActions.java:134)
-	at pagefactory.LoginPage.actionClearInputsInLoginPage(LoginPage.java:66)
-	at scriptrunner.ScriptRunnerOne.run(ScriptRunnerOne.java:37)
-	at ✽.And login with multiple Username and Password(EspressoMultiLogin.feature:6)
-</pre></div></td>
-<td>35</td>
+<td></td>
+<td>47</td>
 <td>runner.TestRunner@69d9c55</td></tr>
 </table><p>
 </body>

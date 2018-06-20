@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="35.134" tests="1" errors="0" skipped="0" failures="1">
+<testsuite name="TestSuite" time="47.2" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
@@ -59,14 +59,5 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="feature" classname="runner.TestRunner" time="35.134">
-    <failure message="java.lang.AssertionError: No element found with identifier name-username" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: java.lang.AssertionError: No element found with identifier name-username
-	at org.junit.Assert.fail(Assert.java:88)
-	at actions.CommonActions.clearTextEvent(CommonActions.java:109)
-	at actions.WebActions.actionClearText(WebActions.java:134)
-	at pagefactory.LoginPage.actionClearInputsInLoginPage(LoginPage.java:66)
-	at scriptrunner.ScriptRunnerOne.run(ScriptRunnerOne.java:37)
-	at ✽.And login with multiple Username and Password(EspressoMultiLogin.feature:6)
-</failure>
-  </testcase>
+  <testcase name="feature" classname="runner.TestRunner" time="47.2"/>
 </testsuite>
