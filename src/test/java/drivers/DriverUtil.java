@@ -68,7 +68,7 @@ public class DriverUtil {
 
                     options.addArguments("--no-sandbox");
                     options.addArguments("--disable-dev-shm-usage");
-                    options.setExperimentalOption("useAutomationExtension", false);
+                    options.addArguments("--headless");
 
                     driver = new ChromeDriver(options);
                     driver.manage().window().maximize();
