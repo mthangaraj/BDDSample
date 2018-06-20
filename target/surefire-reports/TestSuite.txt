@@ -1,4 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 43.625 sec
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 44.002 sec <<< FAILURE!
+feature(runner.TestRunner)  Time elapsed: 35.134 sec  <<< FAILURE!
+cucumber.runtime.CucumberException: java.lang.AssertionError: No element found with identifier name-username
+	at org.junit.Assert.fail(Assert.java:88)
+	at actions.CommonActions.clearTextEvent(CommonActions.java:109)
+	at actions.WebActions.actionClearText(WebActions.java:134)
+	at pagefactory.LoginPage.actionClearInputsInLoginPage(LoginPage.java:66)
+	at scriptrunner.ScriptRunnerOne.run(ScriptRunnerOne.java:37)
+	at ✽.And login with multiple Username and Password(EspressoMultiLogin.feature:6)
+

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="BDD Test Suite" duration-ms="38017" started-at="2018-06-20T18:52:45Z" finished-at="2018-06-20T18:53:23Z">
+  <suite name="BDD Test Suite" duration-ms="36467" started-at="2018-06-20T19:35:24Z" finished-at="2018-06-20T19:36:01Z">
     <groups>
       <group name="cucumber">
-        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@3a03464]" name="feature" class="runner.TestRunner"/>
+        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@69d9c55]" name="feature" class="runner.TestRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Login and Update Profile Test" duration-ms="38017" started-at="2018-06-20T18:52:45Z" finished-at="2018-06-20T18:53:23Z">
+    <test name="Login and Update Profile Test" duration-ms="36467" started-at="2018-06-20T19:35:24Z" finished-at="2018-06-20T19:36:01Z">
       <class name="runner.TestRunner">
-        <test-method status="PASS" signature="before()[pri:0, instance:runner.TestRunner@3a03464]" name="before" is-config="true" duration-ms="726" started-at="2018-06-21T00:22:45Z" finished-at="2018-06-21T00:22:46Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:runner.TestRunner@69d9c55]" name="before" is-config="true" duration-ms="554" started-at="2018-06-21T01:05:24Z" finished-at="2018-06-21T01:05:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@3a03464]" name="feature" duration-ms="36627" started-at="2018-06-21T00:22:46Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-06-21T00:23:23Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@69d9c55]" name="feature" duration-ms="35126" started-at="2018-06-21T01:05:25Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-06-21T01:06:01Z">
           <params>
             <param index="0">
               <value>
@@ -22,14 +22,52 @@
               </value>
             </param>
           </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.AssertionError: No element found with identifier name-username]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: No element found with identifier name-username
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at runner.TestRunner.feature(TestRunner.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.AssertionError: No element found with identifier name-username
+	at org.junit.Assert.fail(Assert.java:88)
+	at actions.CommonActions.clearTextEvent(CommonActions.java:109)
+	at actions.WebActions.actionClearText(WebActions.java:134)
+	at pagefactory.LoginPage.actionClearInputsInLoginPage(LoginPage.java:66)
+	at scriptrunner.ScriptRunnerOne.run(ScriptRunnerOne.java:37)
+	at ✽.And login with multiple Username and Password(EspressoMultiLogin.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="sendMail()[pri:0, instance:runner.TestRunner@3a03464]" name="sendMail" is-config="true" duration-ms="497" started-at="2018-06-21T00:23:23Z" finished-at="2018-06-21T00:23:23Z">
+        <test-method status="PASS" signature="sendMail()[pri:0, instance:runner.TestRunner@69d9c55]" name="sendMail" is-config="true" duration-ms="343" started-at="2018-06-21T01:06:01Z" finished-at="2018-06-21T01:06:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sendMail -->
-        <test-method status="PASS" signature="test()[pri:0, instance:runner.TestRunner@3a03464]" name="test" is-config="true" duration-ms="5135" started-at="2018-06-21T00:23:23Z" finished-at="2018-06-21T00:23:28Z">
+        <test-method status="PASS" signature="test()[pri:0, instance:runner.TestRunner@69d9c55]" name="test" is-config="true" duration-ms="5723" started-at="2018-06-21T01:06:01Z" finished-at="2018-06-21T01:06:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->

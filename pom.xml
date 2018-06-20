@@ -18,6 +18,7 @@
         <extend.version>3.1.2</extend.version>
         <testng.version>6.10</testng.version>
         <cucumbertestng.version>1.2.5</cucumbertestng.version>
+        <htmlunitdriver.version>2.52.0</htmlunitdriver.version>
 
     </properties>
 
@@ -63,6 +64,11 @@
             <groupId>com.sun.mail</groupId>
             <artifactId>javax.mail</artifactId>
             <version>1.6.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-htmlunit-driver</artifactId>
+            <version>${htmlunitdriver.version}</version>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>

@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.File;
@@ -62,15 +63,16 @@ public class DriverUtil {
 
                 if (props.getProperty("browser").equalsIgnoreCase(CommonConstant.CHROME_BROWSER)) {
 
+
                     System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + File.separator + "driver" + File.separator + props.getProperty("driver_name"));
 
                     ChromeOptions options = new ChromeOptions();
 
                     options.addArguments("--no-sandbox");
                     options.addArguments("--disable-dev-shm-usage");
-                    options.setExperimentalOption("useAutomationExtension", false);
 
-                    driver = new ChromeDriver(options);
+                    driver = new HtmlUnitDriver();
+                    //driver = new ChromeDriver(options);
                     driver.manage().window().maximize();
                     driver.get(props.getProperty("url"));
                 } else if (props.getProperty("browser").equalsIgnoreCase(CommonConstant.FIREFOX_BROWSER)) {
